@@ -1,0 +1,22 @@
+body{
+    text-transform: capitalize;
+}
+.calculator-site{
+    background-color: #F8F8F8;
+    padding: 10px 0;
+} 
+ 
+ input{
+    background-color:#DCDCDC;
+    outline: 0;
+    border: none;
+    margin: 10px 0;
+    Height:30px;
+}
+button{
+    Width:100px;
+    Height:30px;
+    border: none;
+    background-color: #59A5FF;
+    margin: 10px 0;
+}
