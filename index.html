@@ -13,7 +13,7 @@
 <body>
     
 <header>
-<div class="container">
+<div class="container text-center">
     <h2>mone mastey</h2>
 </div>
 </header>
@@ -36,20 +36,20 @@
                      <label for="income-input">income</label>
                      <input id="income-input"type="number">
                     </div>
-                    <!-- expenses iste -->
+                    <!-- expenses site -->
                     <h5>expenses</h5>
-                    <label for="food-input">income</label>
+                    <label for="food-input">food</label>
                     <input id="food-input"type="number"><br/>
-                    <label for="rent-input">income</label>
+                    <label for="rent-input">rent</label>
                     <input id="rent-input"type="number"><br/>
-                    <label for="clothe-input">income</label>
-                    <input id="cloth-input"type="number"><br/>
-                    <button type="submit">calculator</button>
+                    <label for="clothe-input">clothes</label>
+                    <input id="clothe-input"type="number"><br/>
+                    <button id="calculator"type="submit">calculator</button>
                 </div>
                 <!-- get sum expenses & income -->
                 <div>
-                 <h5>total expenses:</h5>
-                 <h5>balance:</h5>
+                 <h5>total expenses: <span  id="total-expenses">0</span> </h5>
+                 <h6 >balance: <span id="balance">0</span> </h6>
                 </div>
                 <!-- get sum of % -->
                 <div >
@@ -57,13 +57,14 @@
                      <input class="w-25" id="parcent-input"type="number">
                      <p class="d-inline ">%</p>
                      <button 
-                     id="parcent-btn"type="submit">save</button>
+                     id="save-btn"type="submit">save</button>
                      
                 </div>
                 <!-- get calculation sum -->
                 <div>
-                 <h5>saving amount:</h5>
-                 <h5>remaining balance:</h5>
+                 <h5>saving amount: <span id="saving-amount">0</span> </h5>
+                 <h5>remaining balance: <span id="remaining balance">0</span>
+                 </h5>
                 </div>
                </div>
           </div>
