@@ -12,19 +12,31 @@ function incomeExpense(){
    let clotheValue = parseInt(clotheInput.value);
    
    let sumExpense =foodValue+rentValue+clotheValue;
+  
+  //expenses balance
+  let totalExpenses = document.getElementById("total-expenses");
+  let totalExpensesValue = totalExpenses.innerText
+     if(sumExpense>0){
+         totalExpenses.innerText=sumExpense
+     }
+    
     //income add
      let income = document.getElementById("income-input");
      let incomeValue = parseInt(income.value)
   
      let balance  = document.getElementById("balance");
-       if(sumExpense>0){
-           balance.innerText=incomeValue-sumExpense;
+       if(sumExpense>0 && totalExpensesValue<incomeValue &&  sumExpense<incomeValue){
+        balance.innerText=incomeValue-sumExpense;
+          } 
+          else if( sumExpense>0 &&  totalExpensesValue>incomeValue || sumExpense>incomeValue){
+           alert("your totalexpenses is grater than your balance ")
           }
-    //expenses balance
-    let totalExpenses = document.getElementById("total-expenses");
-       if(sumExpense>0){
-           totalExpenses.innerText=sumExpense
-       }
+          else if(totalExpensesValue>incomeValue || sumExpense>incomeValue){
+            alert("please give positive number")
+          }
+          else{
+            alert("please fill all input and give positive number")
+          } 
   }
   //get sum parcent
   function parcentAdd(){
@@ -36,22 +48,26 @@ function incomeExpense(){
   
     let totalParcent = document.getElementById("saving-amount");
         
-  
     let totalsum = totalParcent.innerText=  (parcentValue* totalValue)/100
   
   //remaing balance add
   
-  document.getElementById("remaining balance").innerText=totalValue-totalsum
-   
+  let remaining = document.getElementById("remaining balance")
+  if(totalsum<=totalValue){
+    remaining.innerText=totalValue-totalsum
+  }
+  else{
+    alert("saving amount is grater than your balance")
+  }
   }
   
-  
+  //add all clickable button
   document.getElementById("calculator").addEventListener("click",function(){
   incomeExpense()
   
   })
   document.getElementById("save-btn").addEventListener("click",function(){
-  
+   
     parcentAdd()
   })
   
