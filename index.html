@@ -11,16 +11,54 @@
 <body>
     
 <header>
-
+<div class="container">
+    <h2>mone mastey</h2>
+</div>
 </header>
 <section>
     <div class="container">
-        <div class="row">
-          <div class="col order-last">
-            
+        <div class="row g-4 text-center">
+            <!-- image section -->
+          <div class="col-12 col-md-6">
+              <div>
+                <img class="img-fluid" src="img/money-calc.jpg" alt="">
+             </div>
           </div>
-          <div class="col">
-           
+          <!-- form calculation section -->
+          <div class="col-12 col-md-6 ">
+           <div>
+               <!-- income site -->
+               <div>
+                <h5>income</h5>
+                <label for="income-input">income</label>
+                <input id="income-input"type="number">
+               </div>
+               <!-- expenses iste -->
+               <h5>expenses</h5>
+               <label for="food-input">income</label>
+               <input id="food-input"type="number"><br/>
+               <label for="rent-input">income</label>
+               <input id="rent-input"type="number"><br/>
+               <label for="clothe-input">income</label>
+               <input id="cloth-input"type="number"><br/>
+               <button class="btn btn-primary "type="submit">calculator</button>
+           </div>
+           <!-- get sum expenses & income -->
+           <div>
+            <h5>total expenses:</h5>
+            <h5>balance:</h5>
+           </div>
+           <!-- get sum of % -->
+           <div class="d-inline">
+                <label for="parcent-input">save</label>
+                <input class="w-25" id="parcent-input"type="number">
+                <button id="parcent-btn"type="submit">save</button>
+           </div>
+           <!-- get calculation sum -->
+           <div>
+            <h5>saving amount:</h5>
+            <h5>remaining balance:</h5>
+           </div>
           </div>
         </div>
       </div>
