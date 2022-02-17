@@ -26,7 +26,7 @@ let totalExpensesValue = totalExpenses.innerText
    let incomeValue = parseInt(income.value)
    income.value=""
    let balance  = document.getElementById("balance");
-     if(foodValue>0 && rentValue>0 && clotheValue>0 && totalExpensesValue<incomeValue &&  sumExpense<incomeValue){
+     if(foodValue>=0 && rentValue>=0 && clotheValue>=0 && totalExpensesValue<incomeValue &&  sumExpense<incomeValue){
       balance.innerText=incomeValue-sumExpense;
         } 
         else if( sumExpense>0 &&  totalExpensesValue>incomeValue || sumExpense>incomeValue){
