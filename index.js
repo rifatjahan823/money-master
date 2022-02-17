@@ -41,6 +41,7 @@ let totalExpensesValue = totalExpenses.innerText
           alert("your balance and expenses same ")
         }
         else if(totalExpensesValue>incomeValue || sumExpense>incomeValue || incomeValue<0){
+          totalExpenses.innerText="0"
           balance.innerText=" 0";
           alert("please give positive number all input")
         }
