@@ -4,41 +4,47 @@ function incomeExpense(){
     //expenses area calculator
     let foodInput = document.getElementById("food-input");
     let foodValue = parseInt(foodInput.value);
-   
+    foodInput.value=""
     let rentInput = document.getElementById("rent-input");
     let rentValue = parseInt(rentInput.value);
-   
+    rentInput.value=""
     let clotheInput = document.getElementById("clothe-input");
    let clotheValue = parseInt(clotheInput.value);
-   
+   clotheInput.value=""
    let sumExpense =foodValue+rentValue+clotheValue;
   
   //expenses balance
   let totalExpenses = document.getElementById("total-expenses");
   let totalExpensesValue = totalExpenses.innerText
+  let income2 = document.getElementById("income-input");
+     let incomeValue2 = parseInt(income2.value)
      if(sumExpense>0){
          totalExpenses.innerText=sumExpense
      }
-    
+  
     //income add
      let income = document.getElementById("income-input");
      let incomeValue = parseInt(income.value)
-  
+     income.value=""
      let balance  = document.getElementById("balance");
        if(sumExpense>0 && totalExpensesValue<incomeValue &&  sumExpense<incomeValue){
         balance.innerText=incomeValue-sumExpense;
           } 
           else if( sumExpense>0 &&  totalExpensesValue>incomeValue || sumExpense>incomeValue){
+            balance.innerText="0 "
            alert("your totalexpenses is grater than your balance ")
           }
           else if(totalExpensesValue>incomeValue || sumExpense>incomeValue){
+            balance.innerText=" 0";
             alert("please give positive number")
           }
           else{
+            totalExpenses.innerText="0"
+            balance.innerText="0 "
             alert("please fill all input and give positive number")
           } 
   }
-  //get sum parcent
+  //get sum of parcent
   function parcentAdd(){
     let totalExpenses = document.getElementById("balance");
     let totalValue = totalExpenses.innerText;

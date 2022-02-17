@@ -7,17 +7,19 @@
     <title>Document</title>
 <!-- bootstrap css url -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<!-- fontawsome url -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet" />
 <!-- css link -->
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
-<header>
+<header class="head">
 <div class="container text-center">
-    <h2>mone mastey</h2>
+    <h1>money  <i class="fas fa-hand-holding-usd"></i> <span style="color: #59A5FF;">check</span></h1>
 </div>
 </header>
-<section >
+<section class="calculation">
     <div class="container">
         <div class="row g-4 text-center align-items-center">
             <!-- image section -->
@@ -29,7 +31,7 @@
           <!-- form calculation section -->
           <div class="col-12 col-md-6 ">
             <div class="calculator-site">
-                <div class="inc-exp">
+                <div class="income-expens">
                     <!-- income site -->
                     <div>
                      <h5>income</h5>
@@ -46,12 +48,12 @@
                     <input id="clothe-input"type="number"><br/>
                     <button id="calculator"type="submit">calculator</button>
                 </div>
-                <!-- get sum expenses & income -->
+                <!-- get sum expenses & income item -->
                 <div>
                  <h5>total expenses: <span  id="total-expenses">0</span> </h5>
-                 <h6 >balance: <span id="balance">0</span> </h6>
+                 <h5 >balance: <span id="balance">0</span> </h5>
                 </div>
-                <!-- get sum of % -->
+                <!-- get sum of % item-->
                 <div >
                      <label for="parcent-input">save</label>
                      <input class="w-25" id="parcent-input"type="number">
@@ -60,7 +62,7 @@
                      id="save-btn"type="submit">save</button>
                      
                 </div>
-                <!-- get calculation sum -->
+                <!-- get calculation sum item -->
                 <div>
                  <h5>saving amount: <span id="saving-amount">0</span> </h5>
                  <h5>remaining balance: <span id="remaining balance">0</span>

@@ -1,7 +1,23 @@
+/* google font url */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+/* common style */
 body{
     text-transform: capitalize;
+    font-family: 'Roboto', sans-serif;
 }
+
+/* header section */
+.head{
+    margin: 20px 0;
+}
+
 /* form calculation section  */
+.calculation{
+    padding: 15px 0;
+}
+
 .calculator-site{
     background-color: #F8F8F8;
     padding: 10px 0;
